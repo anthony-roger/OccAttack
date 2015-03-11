@@ -16,9 +16,7 @@ import javax.swing.JFrame;
 
 public class Triangle implements Shape, Iterable<Point2D.Double> {
 
-	private static final int defaultDrawingStep = 100;
-	private int drawingStep = defaultDrawingStep;
-	
+
 	private Path2D.Double path = null;
 	private final List<Point2D.Double> points = new ArrayList<>();
 	

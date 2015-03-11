@@ -11,11 +11,28 @@ import fr.ensicaen.biometry.occ.attack.adaptation_layer.abstraction.Triangle;
 public class TriangulationExamples {
 	public static void main(String[] args) {
 		DelaunayTriangulation dt = new JdtDelaunayTriangulation();
-		dt.addPoint(1.0, 1.0);
-		dt.addPoint(1.0, 2.0);
-		dt.addPoint(3.0, 1.0);
-		dt.addPoint(3.0, 2.0);
+
+		dt.addPoint(-1.5, 3.2);
+		dt.addPoint(1.8, 3.3);
+		dt.addPoint(-3.7, 1.5);
+		dt.addPoint(-1.5, 1.3);
+		
+		dt.addPoint(0.8, 1.2);
+		dt.addPoint(3.3, 1.5);
+		dt.addPoint(-4.0, -1.0);
+		dt.addPoint(-2.3, -0.7);
+		
+		dt.addPoint(0.0, -0.5);
+		dt.addPoint(2.0, -1.5);
+		dt.addPoint(3.7, -0.8);
+		dt.addPoint(-3.5, -2.9);
+		
+		dt.addPoint(-0.9, -3.9);
+		dt.addPoint(2.0, -3.5);
+		dt.addPoint(3.5, -2.25);
+		
 		dt.process();
+		
 		Set<Triangle> triangles = dt.getTriangles();
 		ShapePanel panel = new ShapePanel();
 		
