@@ -63,31 +63,4 @@ public class Triangle_tests {
 		Assert.assertEquals("Wrong x: " + point.getX(), x, point.getX(), 0);
 		Assert.assertEquals("Wrong y: " + point.getY(), y, point.getY(), 0);
 	}
-	
-	@Test
-	public void display(){
-	    JFrame fenetre = new JFrame();
-	    fenetre.setVisible(true);
-//		Point2D.Double p1 = Triangle.getPoint(1.0, 1.0);
-//		Point2D.Double p2 = Triangle.getPoint(1.0, 2.0);
-//		Point2D.Double p3 = Triangle.getPoint(2.0, 1.0);
-//		Triangle t = new Triangle(p1, p2, p3);
-//		
-//		JFrame f = new JFrame();
-//		JPanel panel = new JPanel(){
-//	        /**
-//			 * 
-//			 */
-//			private static final long serialVersionUID = -466908214958381580L;
-//
-//			@Override
-//	        public void paintComponent(Graphics g) {
-//	            super.paintComponent(g);
-//	            ((Graphics2D) g).draw(t);
-//	        }
-//		};
-//		panel.setVisible(true);
-//		f.add(panel);		
-//		f.setVisible(true);
-	}
 }
