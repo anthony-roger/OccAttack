@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 
 import fr.ensicaen.biometry.occ.attack.adaptation_layer.abstraction.DelaunayTriangulation;
 import fr.ensicaen.biometry.occ.attack.adaptation_layer.abstraction.Triangle;
-import fr.ensicaen.biometry.occ.attack.adaptation_layer.abstraction.TrianglesPanel;
+import fr.ensicaen.biometry.occ.attack.view.TrianglulationPanel;
 
 public class TriangulationExamples {
 	public static void main(String[] args) {
@@ -34,11 +34,11 @@ public class TriangulationExamples {
 		dt.process();
 		
 		Set<Triangle> triangles = dt.getTriangles();
-		TrianglesPanel panel = new TrianglesPanel();
+		TrianglulationPanel panel = new TrianglulationPanel();
 		panel.setDimension(5, 5);
 		
 		String label = "Data";
-		panel.setLabelColor(label, TrianglesPanel.RED);
+		panel.setLabelColor(label, TrianglulationPanel.RED);
 		panel.addAllTriangles(label,triangles);
 		
 		

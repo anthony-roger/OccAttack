@@ -8,6 +8,8 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
+import fr.ensicaen.biometry.occ.attack.view.TrianglulationPanel;
+
 public class Triangle implements Iterable<Point2D.Double> {
 
 	private final List<Point2D.Double> points = new ArrayList<>();
@@ -54,10 +56,10 @@ public class Triangle implements Iterable<Point2D.Double> {
 		Triangle t = new Triangle(p1, p2, p3);
 		
 		JFrame f = new JFrame();
-		TrianglesPanel panel = new TrianglesPanel();
+		TrianglulationPanel panel = new TrianglulationPanel();
 		String label = "Data";
 		panel.addTriangle(label, t);
-		panel.setLabelColor(label, TrianglesPanel.RED);
+		panel.setLabelColor(label, TrianglulationPanel.RED);
 		f.add(panel);	
 		f.setSize(panel.getMinimumSize());
 		f.setVisible(true);

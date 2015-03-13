@@ -1,4 +1,4 @@
-package fr.ensicaen.biometry.occ.attack.adaptation_layer.abstraction;
+package fr.ensicaen.biometry.occ.attack.view;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,12 +12,15 @@ import java.util.Set;
 
 import javax.swing.JPanel;
 
-public class TrianglesPanel extends JPanel {
+import fr.ensicaen.biometry.occ.attack.adaptation_layer.abstraction.Triangle;
+
+public class TrianglulationPanel extends JPanel {
 	
 	public static final Color BLACK = Color.decode("#444444");
 	public static final Color RED = Color.decode("#8d0719");
+	public static final Color GREEN = Color.decode("#00cc00");
 	
-	private static final int defaultDrawingStep = 100;
+	private static final int defaultDrawingStep = 3;
 	private int drawingStep = defaultDrawingStep;
 	
 	public void setDrawingStep(int drawingStep) {
@@ -32,7 +35,7 @@ public class TrianglesPanel extends JPanel {
 	private int xMax = 250;
 	private int yMax = 250;
 	
-	public TrianglesPanel() {
+	public TrianglulationPanel() {
 		setDimension(xMax,yMax);
 	}
 	
