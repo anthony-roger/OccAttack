@@ -25,7 +25,7 @@ public class TriangulationFrame extends JFrame {
 	}
 	
 	public void setLabelColor(String label, Color c){
-		panel.setLabelColor("I3_S8", c);	
+		panel.setLabelColor(label, c);	
 	}
 	
 	
