@@ -8,6 +8,8 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
+import fr.ensicaen.biometry.occ.attack.view.TrianglulationPanel;
+
 public class Triangle implements Iterable<Point2D.Double> {
 
 	private final List<Point2D.Double> points = new ArrayList<>();
@@ -45,6 +47,23 @@ public class Triangle implements Iterable<Point2D.Double> {
 	
 	public static Point2D.Double getPoint(double x, double y){
 		return new Point2D.Double(x, y);
+	}
+	
+	public double getArea(){
+		double area = 0;
+		
+		Double a = points.get(0);
+		Double b = points.get(1);
+		Double c = points.get(2);
+		
+		area = 		a.getX() * (b.getY() - c.getY())
+				+ 	b.getX() * (c.getY() - a.getY())
+				+	c.getX() * (a.getY() - b.getY());
+		
+		area = Math.abs(area);
+		area = area / 2;
+		
+		return area;
 	}
 	
 	public static void main(String[] args) {

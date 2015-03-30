@@ -12,6 +12,7 @@ import fr.ensicaen.biometry.occ.attack.fingerprints.Individual;
 import fr.ensicaen.biometry.occ.attack.fingerprints.Minutia;
 
 public class DbLoader {
+	
 	private final String path;
 	
 	private static final FileFilter NO_FILE_FILTERING = new FileFilter() {
@@ -65,6 +66,7 @@ public class DbLoader {
 				Minutia m = new Minutia(x, y, angle, type);
 				fp.add(m);
 			}
+			sc.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

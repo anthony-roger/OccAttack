@@ -3,8 +3,6 @@ package fr.ensicaen.biometry.occ.attack.database;
 import java.util.Map;
 import java.util.Set;
 
-import javax.swing.JFrame;
-
 import fr.ensicaen.biometry.occ.attack.adaptation_layer.abstraction.DelaunayTriangulation;
 import fr.ensicaen.biometry.occ.attack.adaptation_layer.abstraction.FingerprintTriangulation;
 import fr.ensicaen.biometry.occ.attack.adaptation_layer.abstraction.Triangle;

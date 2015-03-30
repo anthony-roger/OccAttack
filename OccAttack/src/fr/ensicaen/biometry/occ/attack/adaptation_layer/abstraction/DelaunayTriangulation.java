@@ -9,4 +9,5 @@ public interface DelaunayTriangulation {
 	public boolean addPoint(double x, double y);
 	public boolean process();
 	public Set<Triangle> getTriangles();
+	public void clear();
 }
