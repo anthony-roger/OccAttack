@@ -8,8 +8,6 @@ import java.util.List;
 
 import javax.swing.JFrame;
 
-import fr.ensicaen.biometry.occ.attack.view.TrianglulationPanel;
-
 public class Triangle implements Iterable<Point2D.Double> {
 
 	private final List<Point2D.Double> points = new ArrayList<>();
